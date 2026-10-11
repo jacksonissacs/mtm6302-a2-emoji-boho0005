@@ -1,0 +1,67 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #25243a;
+  background: #f5f2eb;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+main {
+  width: min(100% - 2rem, 64rem);
+  margin: 0 auto;
+  padding: 3.5rem 0 1.5rem;
+}
+
+header { max-width: 43rem; margin-bottom: 2.5rem; }
+
+.eyebrow {
+  color: #53516d;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.055em;
+}
+
+h1 span { color: #6446ba; }
+
+.intro { color: #585669; max-width: 33rem; line-height: 1.65; }
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.emoji-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 2rem 1rem 1.2rem;
+  border: 1px solid #dedbe5;
+  border-radius: 1rem;
+  background: #fffcf7;
+}
+
+.emoji {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-size: 3.4rem;
+  line-height: 1.25;
+}
+
+.code { color: #53516d; font-size: 0.8rem; }
+
+footer { margin-top: 2rem; color: #585669; font-size: 0.8rem; line-height: 1.6; }
